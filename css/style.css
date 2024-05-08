@@ -75,12 +75,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #94a3b8;
   font-size: 40px;
   font-family: "Source Code Pro", monospace;
   padding: 10px 20px;
-  z-index: 2; }
-  @media (max-width: 768px) {
-    .header_title {
-      font-size: 24px;
-      padding: 5px 10px; } }
+  z-index: 2;
+  background: linear-gradient(90deg, #00b4ff, #0083ff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
+  .header_title:hover {
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -65%); }
