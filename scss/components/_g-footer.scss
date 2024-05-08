@@ -1,0 +1,63 @@
+.g-footer {
+    background-image: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+    ;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        color: rgba(232, 230, 227, 0.7);
+        font-family: $src_code_pro;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .f-links {
+        margin-bottom: 25px;
+
+        li {
+            display: inline-block;
+            list-style-type: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: $src_code_pro;
+                margin-left: 25px;
+            }
+        }
+    }
+
+    .favicons {
+        margin-bottom: 30px;
+        list-style: none;
+        padding: 0;
+
+
+        li {
+            display: inline-block;
+            margin-right: -5px;
+
+            a {
+                color: $sd_favicons;
+                text-decoration: none;
+                font-size: 28px;
+
+                .fa-stack {
+                    font-size: 18px;
+
+                    &:hover {
+                        transform: translate(0, -16%);
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

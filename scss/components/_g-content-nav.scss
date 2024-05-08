@@ -48,3 +48,83 @@
         }
     }
 }
+
+// not-home pages navbar
+.g_content_navbar_alt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+
+    .alt_nv_logo {
+        max-height: 100%;
+        border-radius: 15px;
+        height: 88px;
+        margin-top: 30px;
+        margin-left: 250px;
+    }
+
+    .g_nav_item_alt {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin-top: 30px;
+            margin-right: 250px;
+
+            li {
+                a {
+                    font-family: $src_code_pro;
+                    text-decoration: none;
+                    color: $sd_blue;
+                    font-size: 18px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1596px) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo"
+            "links";
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        .alt_nv_logo {
+            grid-area: logo;
+            transform: translateX(-100%);
+            margin-left: auto;
+            margin-bottom: 12px;
+        }
+
+        .g_nav_item_alt {
+            ul {
+                grid-area: links;
+                justify-content: center;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

@@ -40,7 +40,7 @@
     font-family: $src_code_pro;
     padding: 10px 20px;
     z-index: 2;
-    background: linear-gradient(90deg, #00b4ff, #0083ff, $sd_blue);
+    background: radial-gradient(circle, rgba(32,103,143,1) 20%, rgba(15,86,122,1) 47%, rgba(17,82,113,1) 57%, rgba(37,98,125,1) 66%, rgba(36,63,130,1) 88%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

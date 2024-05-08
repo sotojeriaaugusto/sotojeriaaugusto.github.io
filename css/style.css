@@ -43,6 +43,104 @@ body {
     .g_content_navbar .g_nav_item ul {
       flex-direction: row; } }
 
+.g_content_navbar_alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10; }
+  .g_content_navbar_alt .alt_nv_logo {
+    max-height: 100%;
+    border-radius: 15px;
+    height: 88px;
+    margin-top: 30px;
+    margin-left: 250px; }
+  .g_content_navbar_alt .g_nav_item_alt ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 250px; }
+    .g_content_navbar_alt .g_nav_item_alt ul li a {
+      font-family: "Source Code Pro", monospace;
+      text-decoration: none;
+      color: #94a3b8;
+      font-size: 18px;
+      text-transform: uppercase; }
+      .g_content_navbar_alt .g_nav_item_alt ul li a:hover {
+        color: white; }
+  @media screen and (max-width: 1596px) {
+    .g_content_navbar_alt {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo" "links";
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 10px; }
+      .g_content_navbar_alt .alt_nv_logo {
+        grid-area: logo;
+        transform: translateX(-100%);
+        margin-left: auto;
+        margin-bottom: 12px; }
+      .g_content_navbar_alt .g_nav_item_alt ul {
+        grid-area: links;
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        margin: 0; } }
+
+.g-footer {
+  background-image: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  .g-footer p {
+    color: rgba(232, 230, 227, 0.7);
+    font-family: "Source Code Pro", monospace; }
+    .g-footer p a {
+      color: white;
+      text-decoration: none; }
+  .g-footer .f-links {
+    margin-bottom: 25px; }
+    .g-footer .f-links li {
+      display: inline-block;
+      list-style-type: none; }
+      .g-footer .f-links li a {
+        color: white;
+        text-decoration: none;
+        font-family: "Source Code Pro", monospace;
+        margin-left: 25px; }
+  .g-footer .favicons {
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0; }
+    .g-footer .favicons li {
+      display: inline-block;
+      margin-right: -5px; }
+      .g-footer .favicons li a {
+        color: #5ddaec;
+        text-decoration: none;
+        font-size: 28px; }
+        .g-footer .favicons li a .fa-stack {
+          font-size: 18px; }
+          .g-footer .favicons li a .fa-stack:hover {
+            transform: translate(0, -16%);
+            transition: transform 0.3s ease; }
+
 .content {
   justify-content: center;
   align-items: center;
@@ -79,10 +177,44 @@ body {
   font-family: "Source Code Pro", monospace;
   padding: 10px 20px;
   z-index: 2;
-  background: linear-gradient(90deg, #00b4ff, #0083ff, #94a3b8);
+  background: radial-gradient(circle, #20678f 20%, #0f567a 47%, #115271 57%, #25627d 66%, #243f82 88%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; }
   .header_title:hover {
     transition: transform 0.3s ease;
     transform: translate(-50%, -65%); }
+
+main {
+  display: flex;
+  justify-content: center; }
+
+.blog-id-content {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 120px;
+  margin-right: 20px;
+  margin-left: 20px; }
+  .blog-id-content img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px; }
+
+@media screen and (max-width: 767px) {
+  .blog-id-content {
+    margin: 10px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center; }
+    .blog-id-content img {
+      max-width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .blog-id-content {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center; }
+    .blog-id-content img {
+      max-width: 100%; } }
