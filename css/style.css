@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  margin: 0;
+  background-color: #030712; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.g_content_navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10; }
+  .g_content_navbar .g_nav_item ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px; }
+    .g_content_navbar .g_nav_item ul li a {
+      font-family: "Source Code Pro", monospace;
+      text-decoration: none;
+      color: #94a3b8;
+      font-size: 18px;
+      text-transform: uppercase; }
+      .g_content_navbar .g_nav_item ul li a:hover {
+        color: white; }
+  @media screen and (max-width: 768px) {
+    .g_content_navbar .g_content_navbar {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px; }
+    .g_content_navbar .g_nav_item ul {
+      flex-direction: row; } }
+
+.content {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden; }
+  .content .header_video {
+    z-index: -999;
+    width: 1000%;
+    height: 100%;
+    padding-bottom: 56.25%;
+    position: absolute; }
+    .content .header_video iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%; }
+      @media (max-width: 991px) {
+        .content .header_video iframe {
+          height: 100vw;
+          width: 100vw; } }
+
+.header_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #94a3b8;
+  font-size: 40px;
+  font-family: "Source Code Pro", monospace;
+  padding: 10px 20px;
+  z-index: 2; }
+  @media (max-width: 768px) {
+    .header_title {
+      font-size: 24px;
+      padding: 5px 10px; } }
