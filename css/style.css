@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: #c1c0be; } }
+
 body {
   margin: 0;
   background-color: #0d0a12; }
@@ -87,7 +100,7 @@ body {
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      padding: 0 10px; }
+      padding: 0 0; }
       .g_content_navbar_alt .alt_nv_logo {
         grid-area: logo;
         justify-content: center;
@@ -381,7 +394,11 @@ p {
       margin-top: 15px;
       margin-left: 20px;
       margin-right: 20px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-right: 0.15em solid #aeaeae;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
   ._about-pg-content .about-card1 {
     grid-area: about-card1;
     background-color: #0a101f;
@@ -395,7 +412,11 @@ p {
       margin-top: 30px;
       margin-left: 20px;
       margin-right: 20px;
-      margin-bottom: 3px; }
+      margin-bottom: 3px;
+      overflow: hidden;
+      border-right: 0.15em solid #aeaeae;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
   ._about-pg-content .about-card2 {
     grid-area: about-card2;
     background-color: #0a101f;
@@ -410,7 +431,11 @@ p {
       margin-top: 30px;
       margin-left: 20px;
       margin-right: 20px;
-      margin-bottom: 3px; }
+      margin-bottom: 3px;
+      overflow: hidden;
+      border-right: 0.15em solid #aeaeae;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
   ._about-pg-content .about-card3 {
     grid-area: about-card3;
     background-color: #0a101f;
@@ -426,4 +451,8 @@ p {
       margin-bottom: 20px;
       max-height: none;
       overflow: visible;
-      white-space: normal; }
+      white-space: normal;
+      overflow: hidden;
+      border-right: 0.15em solid #aeaeae;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
