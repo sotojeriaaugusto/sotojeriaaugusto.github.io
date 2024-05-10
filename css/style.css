@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
   margin: 0;
-  background-color: #030712; }
+  background-color: #0d0a12; }
 
 * {
   margin: 0;
@@ -105,7 +105,7 @@ body {
         margin: 0; } }
 
 .g-footer {
-  background-image: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+  background-image: linear-gradient(to right, #c04848, #480048);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -136,7 +136,7 @@ body {
       display: inline-block;
       margin-right: -5px; }
       .g-footer .favicons li a {
-        color: #5ddaec;
+        color: #eb8989;
         text-decoration: none;
         font-size: 28px; }
         .g-footer .favicons li a .fa-stack {
@@ -275,7 +275,7 @@ body {
   transition: transform 0.3s ease; }
   ._article-card-item:hover {
     transform: translateY(-10px);
-    box-shadow: rgba(16, 119, 134, 0.1) 0px 0px 30px; }
+    box-shadow: #9c739c 0px 0px 30px; }
 
 .card_img {
   width: 100%;
@@ -286,7 +286,7 @@ body {
 
 button {
   padding: 5px 10px;
-  background: linear-gradient(90deg, #107786 0%, #002b6c 167%);
+  background: linear-gradient(to right, #c04848, #480048);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -319,7 +319,7 @@ p {
   font-size: 14px;
   text-decoration: none; }
   .read_href:hover {
-    color: #5898c0; }
+    color: #9c739c; }
 
 ._about-pg-content {
   display: flex;

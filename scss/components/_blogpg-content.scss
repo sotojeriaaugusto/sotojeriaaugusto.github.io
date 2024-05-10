@@ -120,7 +120,7 @@
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: rgba(16, 119, 134, 0.1) 0px 0px 30px;
+    box-shadow: $crd-box-shadow 0px 0px 30px;
   }
 }
 
@@ -135,7 +135,7 @@
 
 button {
   padding: 5px 10px;
-  background: linear-gradient(90deg, rgb(16, 119, 134) 0%, rgb(0, 43, 108) 167%);
+  background: linear-gradient(to right, #c04848, #480048);;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -172,6 +172,6 @@ p {
   text-decoration: none;
 
   &:hover {
-    color: $sd_hover_blue;
+    color: $crd-box-shadow;
   }
 }
