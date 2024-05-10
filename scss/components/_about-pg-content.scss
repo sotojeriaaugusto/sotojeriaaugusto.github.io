@@ -1,0 +1,149 @@
+._about-pg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+    ._about-pg-title {
+        color: white;
+        font-family: $src_code_pro;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    // card grid-layout
+    ._about-pg-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        // gap: 0;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "about-card"
+            "about-ghc"
+            "about-card1"
+            "about-vp"
+            "about-card2"
+            "about-vp2"
+            "about-card3";
+        width: 60%;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    ._about-ghc {
+        grid-area: about-ghc;
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: $src_code_pro;
+            font-size: 20px;
+        }
+    }
+
+    ._about-vp {
+        grid-area: about-vp;
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: $src_code_pro;
+            font-size: 20px;
+        }
+    }
+
+    ._about-vp2 {
+        grid-area: about-vp2;
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: $src_code_pro;
+            font-size: 20px;
+        }
+    }
+
+    .about-card {
+        grid-area: about-card;
+        background-color: $sd_card_blue;
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: -10px;
+
+        p {
+            text-align: start;
+            font-family: $src_code_pro;
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-card1 {
+        grid-area: about-card1;
+        background-color: $sd_card_blue;
+        margin-bottom: 30px;
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+
+        p {
+            text-align: start;
+            font-family: $src_code_pro;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .about-card2 {
+        grid-area: about-card2;
+        background-color: $sd_card_blue;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80%;
+        height: 90%;
+        border-radius: 10px;
+
+        p {
+            text-align: start;
+            font-family: $src_code_pro;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .about-card3 {
+        grid-area: about-card3;
+        background-color: $sd_card_blue;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-width: 80%;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        p {
+            text-align: start;
+            font-family: $src_code_pro;
+            margin: 20px;
+            margin-bottom: 20px;
+            max-height: none;
+            overflow: visible;
+            white-space: normal;
+        }
+    }
+
+}

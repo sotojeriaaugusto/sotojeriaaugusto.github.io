@@ -61,6 +61,7 @@
     align-items: center;
     padding: 0 20px;
     z-index: 10;
+    background-color: transparent;
 
     .alt_nv_logo {
         max-height: 100%;
@@ -68,6 +69,7 @@
         height: 88px;
         margin-top: 30px;
         margin-left: 250px;
+        height: 70px;
     }
 
     .g_nav_item_alt {
@@ -96,7 +98,7 @@
         }
     }
 
-    @media screen and (max-width: 1596px) {
+    @media screen and (max-width: 1200px) {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -109,8 +111,9 @@
 
         .alt_nv_logo {
             grid-area: logo;
-            transform: translateX(-100%);
-            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
             margin-bottom: 12px;
         }
 

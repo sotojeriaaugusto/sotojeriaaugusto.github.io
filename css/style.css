@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 body {
   margin: 0;
   background-color: #030712; }
@@ -53,13 +54,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  z-index: 10; }
+  z-index: 10;
+  background-color: transparent; }
   .g_content_navbar_alt .alt_nv_logo {
     max-height: 100%;
     border-radius: 15px;
     height: 88px;
     margin-top: 30px;
-    margin-left: 250px; }
+    margin-left: 250px;
+    height: 70px; }
   .g_content_navbar_alt .g_nav_item_alt ul {
     padding: 0;
     margin: 0;
@@ -76,7 +79,7 @@ body {
       text-transform: uppercase; }
       .g_content_navbar_alt .g_nav_item_alt ul li a:hover {
         color: white; }
-  @media screen and (max-width: 1596px) {
+  @media screen and (max-width: 1200px) {
     .g_content_navbar_alt {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -87,8 +90,9 @@ body {
       padding: 0 10px; }
       .g_content_navbar_alt .alt_nv_logo {
         grid-area: logo;
-        transform: translateX(-100%);
-        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
         margin-bottom: 12px; }
       .g_content_navbar_alt .g_nav_item_alt ul {
         grid-area: links;
@@ -105,7 +109,7 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%; }
   .g-footer p {
@@ -185,36 +189,241 @@ body {
     transition: transform 0.3s ease;
     transform: translate(-50%, -65%); }
 
-main {
+.blog-pg-main {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px; }
 
 .blog-id-content {
   max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  margin-top: 120px;
-  margin-right: 20px;
-  margin-left: 20px; }
-  .blog-id-content img {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+  .blog-id-content video {
     max-width: 70%;
-    display: block;
-    margin: 0 auto;
     border-radius: 16px; }
+  .blog-id-content h1 {
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 28px;
+    text-align: center;
+    z-index: 1; }
 
 @media screen and (max-width: 767px) {
   .blog-id-content {
     margin: 10px;
-    margin-top: 180px;
     display: flex;
     justify-content: center; }
-    .blog-id-content img {
-      max-width: 100%; } }
+    .blog-id-content video {
+      max-width: 100%;
+      margin-top: 30px; }
+    .blog-id-content h1 {
+      top: 22.5%;
+      font-size: 15px;
+      width: 1000px; } }
+
+@media screen and (max-width: 1200px) {
+  .blog-id-content {
+    margin: 10px;
+    display: flex;
+    justify-content: center; }
+    .blog-id-content video {
+      max-width: 100%;
+      margin-top: 30px; }
+    .blog-id-content h1 {
+      top: 22.5%;
+      font-size: 15px;
+      width: 1000px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .blog-id-content {
-    margin-top: 180px;
     display: flex;
     justify-content: center; }
-    .blog-id-content img {
-      max-width: 100%; } }
+    .blog-id-content video {
+      max-width: 100%; }
+    .blog-id-content h1 {
+      top: 22.5%;
+      font-size: 15px;
+      width: 1000px; } }
+
+.blog-id-title h2 {
+  font-family: "Inter", sans-serif;
+  color: #d2cec8;
+  font-size: 30px;
+  margin-bottom: 35px; }
+
+._blog-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+  margin-bottom: 30px; }
+
+@media (max-width: 768px) {
+  ._blog-articles {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+
+._article-card-item {
+  position: relative;
+  background-color: #1c1e1f;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 340px;
+  transition: transform 0.3s ease; }
+  ._article-card-item:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(16, 119, 134, 0.1) 0px 0px 30px; }
+
+.card_img {
+  width: 100%;
+  border-radius: 10px 10px 0 0; }
+
+.card-info {
+  padding: 20px; }
+
+button {
+  padding: 5px 10px;
+  background: linear-gradient(90deg, #107786 0%, #002b6c 167%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
+  margin-bottom: 8px;
+  margin-right: 4px; }
+
+h3 {
+  color: #d2cec8;
+  font-family: "Inter", sans-serif; }
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #d2cec8;
+  max-height: 160px;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 18px; }
+
+.read_href {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  color: #aba7a3;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-decoration: none; }
+  .read_href:hover {
+    color: #5898c0; }
+
+._about-pg-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px; }
+  ._about-pg-content ._about-pg-title {
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px; }
+  ._about-pg-content ._about-pg-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "about-card" "about-ghc" "about-card1" "about-vp" "about-card2" "about-vp2" "about-card3";
+    width: 60%;
+    margin-top: -20px;
+    margin-bottom: 40px; }
+  ._about-pg-content ._about-ghc {
+    grid-area: about-ghc; }
+    ._about-pg-content ._about-ghc h2 {
+      color: white;
+      text-align: center;
+      font-family: "Source Code Pro", monospace;
+      font-size: 20px; }
+  ._about-pg-content ._about-vp {
+    grid-area: about-vp; }
+    ._about-pg-content ._about-vp h2 {
+      color: white;
+      text-align: center;
+      font-family: "Source Code Pro", monospace;
+      font-size: 20px; }
+  ._about-pg-content ._about-vp2 {
+    grid-area: about-vp2; }
+    ._about-pg-content ._about-vp2 h2 {
+      color: white;
+      text-align: center;
+      font-family: "Source Code Pro", monospace;
+      font-size: 20px; }
+  ._about-pg-content .about-card {
+    grid-area: about-card;
+    background-color: #0a101f;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: -10px; }
+    ._about-pg-content .about-card p {
+      text-align: start;
+      font-family: "Source Code Pro", monospace;
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+  ._about-pg-content .about-card1 {
+    grid-area: about-card1;
+    background-color: #0a101f;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px; }
+    ._about-pg-content .about-card1 p {
+      text-align: start;
+      font-family: "Source Code Pro", monospace;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 3px; }
+  ._about-pg-content .about-card2 {
+    grid-area: about-card2;
+    background-color: #0a101f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px; }
+    ._about-pg-content .about-card2 p {
+      text-align: start;
+      font-family: "Source Code Pro", monospace;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 3px; }
+  ._about-pg-content .about-card3 {
+    grid-area: about-card3;
+    background-color: #0a101f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 80%;
+    border-radius: 10px;
+    overflow: hidden; }
+    ._about-pg-content .about-card3 p {
+      text-align: start;
+      font-family: "Source Code Pro", monospace;
+      margin: 20px;
+      margin-bottom: 20px;
+      max-height: none;
+      overflow: visible;
+      white-space: normal; }
