@@ -10,7 +10,8 @@
         font-family: $src_code_pro;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     // card grid-layout
@@ -46,6 +47,7 @@
             text-align: center;
             font-family: $src_code_pro;
             font-size: 20px;
+            margin: 0 auto;
         }
     }
 
@@ -73,19 +75,28 @@
 
     .about-card {
         grid-area: about-card;
-        background-color: $sd_card_blue;
+        background-color: $sd_card_blue, .8;
         width: 80%;
         height: 100%;
         border-radius: 10px;
         margin-bottom: -10px;
+        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: translateY(-10px);
+        }
 
         p {
             text-align: start;
             font-family: $src_code_pro;
+            font-size: 12px;
             margin-top: 15px;
             margin-left: 20px;
             margin-right: 20px;
             margin-bottom: 20px;
+            max-height: none;
+            overflow: visible;
+            white-space: normal;
             overflow: hidden; 
             border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
@@ -97,19 +108,28 @@
 
     .about-card1 {
         grid-area: about-card1;
-        background-color: $sd_card_blue;
+        background-color: $sd_card_blue, .8;
         margin-bottom: 30px;
         width: 80%;
         height: 100%;
         border-radius: 10px;
+        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: translateY(-10px);
+        }
 
         p {
             text-align: start;
             font-family: $src_code_pro;
+            font-size: 12px;
             margin-top: 30px;
             margin-left: 20px;
             margin-right: 20px;
             margin-bottom: 3px;
+            max-height: none;
+            overflow: visible;
+            white-space: normal;
             overflow: hidden; 
             border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
@@ -121,20 +141,29 @@
 
     .about-card2 {
         grid-area: about-card2;
-        background-color: $sd_card_blue;
+        background-color: $sd_card_blue, .8;
         margin-top: 30px;
         margin-bottom: 30px;
         width: 80%;
         height: 90%;
         border-radius: 10px;
+        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: translateY(-10px);
+        }
 
         p {
             text-align: start;
             font-family: $src_code_pro;
+            font-size: 12px;
             margin-top: 30px;
             margin-left: 20px;
             margin-right: 20px;
             margin-bottom: 3px;
+            max-height: none;
+            overflow: visible;
+            white-space: normal;
             overflow: hidden; 
             border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
@@ -146,16 +175,23 @@
 
     .about-card3 {
         grid-area: about-card3;
-        background-color: $sd_card_blue;
         margin-top: 30px;
         margin-bottom: 30px;
         max-width: 80%;
         border-radius: 10px;
         overflow: hidden;
+        background-color: $sd_card_blue, .8;
+        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        backdrop-filter: blur(6px);
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: translateY(-10px);
+        }
     
         p {
             text-align: start;
             font-family: $src_code_pro;
+            font-size: 12px;
             margin: 20px;
             margin-bottom: 20px;
             max-height: none;
