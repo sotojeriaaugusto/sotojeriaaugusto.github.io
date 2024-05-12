@@ -80,7 +80,7 @@
         height: 100%;
         border-radius: 10px;
         margin-bottom: -10px;
-        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
         transition: transform 0.3s ease;
         &:hover {
           transform: translateY(-10px);
@@ -98,7 +98,6 @@
             overflow: visible;
             white-space: normal;
             overflow: hidden; 
-            border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
             animation: 
                 typing 3.5s steps(40, end),
@@ -113,7 +112,7 @@
         width: 80%;
         height: 100%;
         border-radius: 10px;
-        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
         transition: transform 0.3s ease;
         &:hover {
           transform: translateY(-10px);
@@ -131,7 +130,6 @@
             overflow: visible;
             white-space: normal;
             overflow: hidden; 
-            border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
             animation: 
                 typing 3.5s steps(40, end),
@@ -147,7 +145,7 @@
         width: 80%;
         height: 90%;
         border-radius: 10px;
-        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
         transition: transform 0.3s ease;
         &:hover {
           transform: translateY(-10px);
@@ -165,7 +163,6 @@
             overflow: visible;
             white-space: normal;
             overflow: hidden; 
-            border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
             animation: 
                 typing 3.5s steps(40, end),
@@ -181,7 +178,7 @@
         border-radius: 10px;
         overflow: hidden;
         background-color: $sd_card_blue, .8;
-        -webkit-box-shadow: 0px 4px 6px 2px #c15f5f;
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
         backdrop-filter: blur(6px);
         transition: transform 0.3s ease;
         &:hover {
@@ -198,7 +195,6 @@
             overflow: visible;
             white-space: normal;
             overflow: hidden; 
-            border-right: .15em solid rgb(174, 174, 174);
             letter-spacing: .15em;
             animation: 
                 typing 3.5s steps(40, end),
