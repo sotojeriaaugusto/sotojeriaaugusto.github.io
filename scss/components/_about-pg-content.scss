@@ -98,8 +98,8 @@
 
   @media screen and (max-width: 768px) {
       ._card-pfp {
-        left: 50%; // Centrar horizontalmente
-        transform: translateX(-50%); // Ajuste para centrar horizontalmente
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
