@@ -355,147 +355,135 @@ p {
   align-items: center;
   flex-direction: column;
   margin-top: 100px; }
-  ._about-pg-content ._about-pg-title {
-    color: white;
-    font-family: "Source Code Pro", monospace;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px; }
-  ._about-pg-content ._about-pg-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas: "about-card" "about-ghc" "about-card1" "about-vp" "about-card2" "about-vp2" "about-card3";
-    width: 60%;
-    margin-top: -20px;
-    margin-bottom: 40px; }
-  ._about-pg-content ._about-ghc {
-    grid-area: about-ghc; }
-    ._about-pg-content ._about-ghc h2 {
-      color: white;
-      text-align: center;
-      font-family: "Source Code Pro", monospace;
-      font-size: 20px;
-      margin: 0 auto; }
-  ._about-pg-content ._about-vp {
-    grid-area: about-vp; }
-    ._about-pg-content ._about-vp h2 {
-      color: white;
-      text-align: center;
-      font-family: "Source Code Pro", monospace;
-      font-size: 20px; }
-  ._about-pg-content ._about-vp2 {
-    grid-area: about-vp2; }
-    ._about-pg-content ._about-vp2 h2 {
-      color: white;
-      text-align: center;
-      font-family: "Source Code Pro", monospace;
-      font-size: 20px; }
-  ._about-pg-content .about-card {
-    grid-area: about-card;
-    background-color: #0a101f, 0.8;
-    width: 80%;
-    height: 100%;
-    border-radius: 10px;
-    margin-bottom: -10px;
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
-    transition: transform 0.3s ease; }
-    ._about-pg-content .about-card:hover {
-      transform: translateY(-10px); }
-    ._about-pg-content .about-card p {
-      text-align: start;
-      font-family: "Source Code Pro", monospace;
-      font-size: 12px;
-      margin-top: 15px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      max-height: none;
-      overflow: visible;
-      white-space: normal;
-      overflow: hidden;
-      letter-spacing: .15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  ._about-pg-content .about-card1 {
-    grid-area: about-card1;
-    background-color: #0a101f, 0.8;
-    margin-bottom: 30px;
-    width: 80%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
-    transition: transform 0.3s ease; }
-    ._about-pg-content .about-card1:hover {
-      transform: translateY(-10px); }
-    ._about-pg-content .about-card1 p {
-      text-align: start;
-      font-family: "Source Code Pro", monospace;
-      font-size: 12px;
-      margin-top: 30px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 3px;
-      max-height: none;
-      overflow: visible;
-      white-space: normal;
-      overflow: hidden;
-      letter-spacing: .15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  ._about-pg-content .about-card2 {
-    grid-area: about-card2;
-    background-color: #0a101f, 0.8;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 80%;
-    height: 90%;
-    border-radius: 10px;
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
-    transition: transform 0.3s ease; }
-    ._about-pg-content .about-card2:hover {
-      transform: translateY(-10px); }
-    ._about-pg-content .about-card2 p {
-      text-align: start;
-      font-family: "Source Code Pro", monospace;
-      font-size: 12px;
-      margin-top: 30px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 3px;
-      max-height: none;
-      overflow: visible;
-      white-space: normal;
-      overflow: hidden;
-      letter-spacing: .15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
-  ._about-pg-content .about-card3 {
-    grid-area: about-card3;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 80%;
-    border-radius: 10px;
+
+._profile-card {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(178, 100, 173, 0.352);
+  transition: box-shadow 0.3s ease;
+  background-color: #1c1e1f;
+  font-family: "Source Code Pro", monospace;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease; }
+  ._profile-card ._profile-cover-banner {
+    position: relative;
     overflow: hidden;
-    background-color: #0a101f, 0.8;
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
-    backdrop-filter: blur(6px);
-    transition: transform 0.3s ease; }
-    ._about-pg-content .about-card3:hover {
-      transform: translateY(-10px); }
-    ._about-pg-content .about-card3 p {
-      text-align: start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+    ._profile-card ._profile-cover-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+  ._profile-card ._card-pfp {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    z-index: 2;
+    overflow: hidden; }
+    ._profile-card ._card-pfp img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px; }
+  ._profile-card ._profile-social-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index: 3; }
+    ._profile-card ._profile-social-icons i {
+      font-size: 24px;
+      color: #94a3b8;
+      margin: 0 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease; }
+      ._profile-card ._profile-social-icons i:hover {
+        transform: translateY(-3px); }
+  ._profile-card ._pf-card-description {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 3; }
+    ._profile-card ._pf-card-description h2 {
+      margin-bottom: 10px;
+      font-family: "Inter", sans-serif;
+      color: #94a3b8; }
+    ._profile-card ._pf-card-description p {
+      margin-top: 0;
       font-family: "Source Code Pro", monospace;
-      font-size: 12px;
-      margin: 20px;
-      margin-bottom: 20px;
-      max-height: none;
-      overflow: visible;
-      white-space: normal;
-      overflow: hidden;
-      letter-spacing: .15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+      color: #aba7a3; }
+  ._profile-card:hover {
+    box-shadow: 0 8px 12px rgba(182, 106, 189, 0.522);
+    transform: translateY(-10px); }
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  max-width: 80%; }
+
+.about-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1c1e1f;
+  transition: transform 0.3s ease; }
+  .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px; }
+
+.about-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+
+.about-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.about-card__content {
+  padding: 20px; }
+
+.about-card__content button {
+  padding: 5px 10px;
+  background: linear-gradient(to right, #793c61, #3c1053);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
+  margin-bottom: 8px;
+  margin-right: 4px; }
+
+.about-card__content h3 {
+  color: #d2cec8;
+  font-family: "Inter", sans-serif; }
+
+.about-card__content p {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #d2cec8;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 18px; }
+
+.about-card__content a {
+  color: #aba7a3;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-decoration: none; }
+
+.about-card__content a:hover {
+  color: #ab4fab; }
