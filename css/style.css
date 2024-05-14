@@ -358,7 +358,7 @@ p {
 
 ._profile-card {
   position: relative;
-  width: 400px;
+  width: 300px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(178, 100, 173, 0.352);
@@ -383,10 +383,11 @@ p {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 70px;
+    top: 40px;
     left: 150px;
     z-index: 2;
-    overflow: hidden; }
+    overflow: hidden;
+    transform: translateX(-50%); }
     ._profile-card ._card-pfp img {
       width: 100%;
       height: 100%;
@@ -422,6 +423,10 @@ p {
   ._profile-card:hover {
     box-shadow: 0 8px 12px rgba(182, 106, 189, 0.522);
     transform: translateY(-10px); }
+  @media screen and (max-width: 768px) {
+    ._profile-card ._card-pfp {
+      left: 50%;
+      transform: translateX(-50%); } }
 
 .about-cards {
   display: grid;
