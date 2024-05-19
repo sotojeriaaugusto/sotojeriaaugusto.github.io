@@ -3,6 +3,7 @@
 @import './utils/fonts';
 @import './utils/keyframes';
 @import './utils/global';
+@import './utils/extends';
 @import './utils/reset';
 
 // global components
@@ -17,3 +18,6 @@
 
 // about components 
 @import './components/about-pg-content';
+
+// projects components 
+@import './components/projects-content';

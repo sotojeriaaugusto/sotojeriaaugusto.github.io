@@ -1,0 +1,118 @@
+._projects-content {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    h1 {
+        font-family: $src-code-pro;
+        color: $sd_blue;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+._projects-gridmg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    gap: 20px;
+}
+
+._projects-glasscard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .title {
+                font-size: 1.5em;
+                margin: 0;
+                font-family: $src-code-pro;
+                color: white;
+            }
+
+            .date {
+                @extend .pjt-desc;
+                font-size: 0.9em;
+                margin-top: 2px;
+            }
+
+            .description {
+                font-family: $src-code-pro;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .language {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        p {
+            font-family: $src-code-pro;
+            font-size: 0.9em;
+            color: $sd_blue;
+            margin: 0;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+
+        .image,
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+// article selector extd
+.resp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.pjt-desc {
+    color: $sd_blue;
+    font: $inter;
+}

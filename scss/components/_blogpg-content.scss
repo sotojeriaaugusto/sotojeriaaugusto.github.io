@@ -9,7 +9,7 @@
 
 .blog-id-content {
   .blog-ttl {
-    color: white;
+    color: $sd_blue;
     font-family: $inter;
     font-size: 30px;
     text-align: center;
@@ -19,8 +19,7 @@
 
 // article category selector grid
 ._article-selector {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  @extend .resp-grid;
   gap: 10px;
   justify-content: center;
   margin-top: 20px;
@@ -97,7 +96,7 @@
 .blog-id-title {
   h2 {
     font-family: $inter;
-    color: $sd_title;
+    color: $sd_blue;
     font-size: 28px;
     margin-bottom: 35px;
     text-align: center;

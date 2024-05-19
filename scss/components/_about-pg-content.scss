@@ -17,7 +17,7 @@
   font-family: $src_code_pro;
   margin-top: 30px;
   margin-bottom: 30px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 
   ._profile-cover-banner {
     position: relative;
@@ -92,8 +92,8 @@
   }
 
   &:hover {
-    box-shadow: 0 8px 12px rgba(182, 106, 189, 0.522);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
   }
 
   @media screen and (max-width: 768px) {
@@ -105,82 +105,119 @@
   }
 
 
+// about cards
+._abt-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+}
 
+._abt-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-  // about cards
-  .about-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    gap: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    max-width: 80%;
+._abt-txt-cd {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
   }
 
-  .about-card {
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: $card_bg;
-    transition: transform 0.3s ease;
+  ._abt-txt-h2 {
+    color: $sd_blue;
+    font-family: $src-code-pro;
+  }
 
-    &:hover {
-      transform: translateY(-10px);
-      box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+  ._abt-p {
+    font-family: $src-code-pro;
+    margin-bottom: 15px;
+    color: $sd_href;
+    font-size: 14px;
+  }
+}
+
+
+// form
+._abt-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+
+  ._form-ttl {
+    color: $sd_blue;
+    font-family: $src-code-pro;
+    margin-bottom: 10px;
+  }
+
+  ._abt-form {
+    width: 100%;
+    max-width: 16s00px;
+
+    ._glass-form {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+      gap: 20px;
+      max-width: 1600px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-bottom: 5px;
+          color: #fff;
+          font-family: $src-code-pro;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          background: rgba(255, 255, 255, 0.1);
+          color: #fff;
+          font-family: $src-code-pro;
+        }
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 600px;
+      }
     }
   }
-
-  .about-card__image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-  }
-
-  .about-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-
-  .about-card__content {
-    padding: 20px;
-  }
-
-  .about-card__content button {
-    padding: 5px 10px;
-    background: linear-gradient(to right, #793c61, #3c1053);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-family: $src_code_pro;
-    font-size: 10px;
-    margin-bottom: 8px;
-    margin-right: 4px;
-  }
-
-  .about-card__content h3 {
-    color: $sd_title;
-    font-family: $inter;
-  }
-
-  .about-card__content p {
-    font-family: $inter;
-    font-size: 13px;
-    color: $sd_title;
-    overflow: hidden;
-    margin-top: 8px;
-    margin-bottom: 18px;
-  }
-
-  .about-card__content a {
-    color: $sd_href;
-    font-family: $inter;
-    font-size: 14px;
-    text-decoration: none;
-  }
-
-  .about-card__content a:hover {
-    color: $crd-box-shadow;
-  }
+}
