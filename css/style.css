@@ -175,25 +175,17 @@ body {
   display: flex;
   position: relative;
   overflow: hidden; }
-  .content .header_video {
-    z-index: -999;
+  .content #particles-js {
     width: 1000%;
     height: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 0;
     position: absolute;
-    mix-blend-mode: screen; }
-    .content .header_video iframe {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0%;
-      bottom: 0%;
-      left: 0%;
-      right: 0%; }
-      @media (max-width: 991px) {
-        .content .header_video iframe {
-          height: 100vw;
-          width: 100vw; } }
+    mix-blend-mode: screen;
+    background: linear-gradient(135deg, #2b1d36, #26162b, #3a213a, #29192d, #3b223b); }
+    @media (max-width: 991px) {
+      .content #particles-js {
+        height: 100vw;
+        width: 100vw; } }
 
 .header_title {
   position: absolute;
@@ -554,7 +546,7 @@ p {
   width: 100%;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  transition: transform 0.5s ease, box-shadow 0.5s ease; }
   ._projects-glasscard:hover {
     transform: translateY(-5px);
     box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px; }
