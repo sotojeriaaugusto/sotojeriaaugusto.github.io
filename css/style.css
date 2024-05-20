@@ -566,7 +566,12 @@ p {
     ._projects-glasscard .header .logo {
       width: 100px;
       height: auto;
-      margin-right: 20px; }
+      margin-right: 20px;
+      border-radius: 10px;
+      box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+      transition: transform 0.5s ease; }
+      ._projects-glasscard .header .logo:hover {
+        transform: translateY(-5px); }
     ._projects-glasscard .header .text-content {
       display: flex;
       flex-direction: column;
