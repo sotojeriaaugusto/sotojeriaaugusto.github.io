@@ -11,7 +11,7 @@
   width: 300px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(178, 100, 173, 0.352);
+  box-shadow: 0 4px 6px rgba(100, 142, 178, 0.352);
   transition: box-shadow 0.3s ease;
   background-color: $card_bg;
   font-family: $src_code_pro;
@@ -93,7 +93,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+    box-shadow: rgba(88, 139, 227, 0.575) 0px 5px 15px;
   }
 
   @media screen and (max-width: 768px) {
@@ -132,7 +132,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+    box-shadow: rgba(119, 147, 206, 0.35) 0px 5px 15px;
   }
 
   ._abt-txt-h2 {
@@ -181,7 +181,7 @@
 
       &:hover {
         transform: translateY(-5px);
-        box-shadow: rgba(167, 119, 206, 0.35) 0px 5px 15px;
+        box-shadow: rgba(119, 155, 206, 0.35) 0px 5px 15px;
       }
 
       .form-group {
